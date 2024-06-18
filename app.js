@@ -6,11 +6,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const userRoutes = require("../server/src/routes/users.routes");
-const productRoutes = require("../server/src/routes/products.routes");
-const orderRoutes = require("../server/src/routes/order.routes");
-const adminRoutes = require("../server/src/routes/admin.routes");
-const staffRoutes = require("../server/src/routes/staff.routes");
+const userRoutes = require("./src/routes/users.routes");
+const productRoutes = require(".src/routes/products.routes");
+const orderRoutes = require(".src/routes/order.routes");
+const adminRoutes = require("./src/routes/admin.routes");
+const staffRoutes = require("./src/routes/staff.routes");
 const {
   errorHandlingMiddleware,
 } = require("../server/src/middlewares/error.middleware");
