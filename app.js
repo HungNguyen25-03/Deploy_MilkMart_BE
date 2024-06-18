@@ -7,14 +7,13 @@ app.use(express.json());
 app.use(cors());
 
 const userRoutes = require("./src/routes/users.routes");
-const productRoutes = require(".src/routes/products.routes");
-const orderRoutes = require(".src/routes/order.routes");
+const productRoutes = require("./src/routes/products.routes");
+const orderRoutes = require("./src/routes/order.routes");
 const adminRoutes = require("./src/routes/admin.routes");
 const staffRoutes = require("./src/routes/staff.routes");
 const {
   errorHandlingMiddleware,
-} = require("../server/src/middlewares/error.middleware");
-
+} = require("./src/middlewares/error.middleware");
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
