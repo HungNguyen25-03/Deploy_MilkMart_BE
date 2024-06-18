@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx nodemon",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "rimraf ./dist",
   },
   "author": "",
   "license": "ISC",
